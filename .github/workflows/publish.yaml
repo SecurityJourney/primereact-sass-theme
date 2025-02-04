@@ -11,6 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       # Setup .npmrc file to publish to GitHub Packages
+      - name: hot edit package.json
+        run: | 
+          sed -i 's/"name": "primereact-sass-theme"/"name": "@securityjourney/primereact-sass-theme"/g' package.json
+          sed -i 's/"url": "git+https://github.com/primefaces/primereact-sass-theme.git"/"url": "https://github.com/SecurityJourney/primereact-sass-theme"/g' package.json
+
       - uses: actions/setup-node@v4
         with:
           node-version: '20.x'
