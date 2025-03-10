@@ -1,3 +1,4 @@
+// Overrides from SJ_FE
 .p-toast .p-toast-message.p-toast-message-secondary {
   background: $infoMessageBg; // #cce5ff
   border: solid $infoMessageBorder; // #b8daff
@@ -51,4 +52,20 @@ ul {
 .p-checkbox.p-highlight .p-checkbox-box {
   border-color: $primaryColor;
   background: $primaryColor;
+}
+
+// Styles from KAF
+.p-overlaypanel-content {
+  padding: 0; /* Remove padding */
+}
+
+.p-dropdown-items-wrapper > ul.p-dropdown-items {
+  padding-left: 0;
+}
+
+.p-button.p-component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
