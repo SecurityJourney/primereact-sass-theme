@@ -1,0 +1,71 @@
+// Overrides from SJ_FE
+.p-toast .p-toast-message.p-toast-message-secondary {
+  background: $infoMessageBg; // #cce5ff
+  border: solid $infoMessageBorder; // #b8daff
+  border-width: 1px;
+  color: $infoMessageIconColor; // #004085
+}
+
+.p-datatable-table td {
+  font-size: 14px;
+  line-height: normal;
+}
+
+.p-datatable-table th {
+  font-size: 14px;
+  line-height: normal;
+}
+
+ol,
+ul {
+  padding-left: 0;
+}
+
+.p-dialog-footer,
+.p-card .p-card-footer {
+  margin: 0;
+  padding: 0;
+}
+
+.p-togglebutton .p-button {
+  background: transparent;
+  border: 1px solid $primaryColor;
+  color: $primaryColor;
+}
+
+.p-togglebutton.p-highlight .p-button {
+  background-color: $primaryColor;
+  color: #fff;
+}
+
+.p-tooltip .p-tooltip-text {
+  background-color: transparent;
+  color: #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+}
+
+.p-tooltip-arrow {
+  border-right: #fff solid 4px;
+}
+
+.p-checkbox.p-highlight .p-checkbox-box {
+  border-color: $primaryColor;
+  background: $primaryColor;
+}
+
+// Styles from KAF
+.p-overlaypanel-content {
+  padding: 0; /* Remove padding */
+}
+
+.p-dropdown-items-wrapper > ul.p-dropdown-items {
+  padding-left: 0;
+}
+
+.p-button.p-component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
